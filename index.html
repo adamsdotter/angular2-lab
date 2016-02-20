@@ -20,14 +20,14 @@
     <!-- Configure System.js, our module loader -->
     <script>
       System.config({
-        packages: {        
+        packages: {
           app: {
             format: 'register',
             defaultExtension: 'js'
           }
         }
       });
-      System.import('app.js')
+      System.import('RedditApp.js')
             .then(null, console.error.bind(console));
     </script>
 
@@ -35,7 +35,7 @@
     <div class="ui menu">
       <div class="ui container">
         <a href="#" class="header item">
-          <img class="logo" src="resources/images/ng-book-2-minibook.png">
+          <img class="logo" alt="" src="resources/images/ng-book-2-minibook.png">
           ng-book 2
         </a>
         <div class="header item borderless">
@@ -47,7 +47,7 @@
     </div>
 
     <div class="ui main text container">
-      <reddit></reddit> <!-- <--- Our app loads here! -->
+      <reddit></reddit> <!-- Our app loads here! -->
     </div>
 
   </body>
